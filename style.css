@@ -82,7 +82,7 @@ main{
 .retangulo{
     position: relative;
     background-color: #FFFFFF;
-    height: 2400px;
+    height: 2320px;
     width: 1900px;
     bottom: 2295px;
     left: 2600px;
@@ -119,7 +119,7 @@ main{
 .segunda-section-depois{
     position: relative;
     background-color: #FFFFFF;
-    height: 2400px;
+    height: 2320px;
     width: 1900px;
     bottom: 2295px;
     left: 2600px;
@@ -154,4 +154,16 @@ main{
     border-color: #0A3871;
     margin-top: 665px;
     margin-left: 460px;
+}
+
+footer{
+    background-color: #909396;
+    position: absolute;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 58px;
+    font-weight: 200;
+    top: 2470px;
+width: 5450px;
+height: 140px;
 }
