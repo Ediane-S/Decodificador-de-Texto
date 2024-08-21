@@ -20,7 +20,7 @@ function criptografar() {
 
     var resulCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat");
 
-    document.getElementById('outTexto').innerHTML = resulCripto 
+    outText.value = resulCripto;
 }
 
 function descriptografar() {
@@ -28,7 +28,7 @@ function descriptografar() {
 
     var resulDescripto = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
 
-    document.getElementById('outTexto',"inputTexto").innerHTML = resulDescripto
+    outText.value = resulDescripto;
 }
 
 function copiar() {
