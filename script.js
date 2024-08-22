@@ -33,14 +33,14 @@ function descriptografar() {
 
 function copiar() {
     var textoCop = document.getElementById('outTexto');
- 
+
     textoCop.select();
     document.execCommand('copy');
     alert("Texto Copiado!");
- }
+}
 
- const chk = document.getElementById('chk')
+const chk = document.getElementById('chk')
 
- chk.addEventListener('change', () =>{
+chk.addEventListener('change', () => {
     document.body.classList.toggle('dark')
- })
+})
