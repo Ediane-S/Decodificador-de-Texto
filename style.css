@@ -12,6 +12,11 @@ body {
     display: flex;
     overflow: hidden;
     background-color: #F3F5FC;
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background-color: #0A3858;
 }
 
 .logo {
@@ -23,6 +28,47 @@ body {
 
 main {
     width: 4600px;
+}
+
+.toogle{
+    position: absolute;
+    left: 2600px;
+    margin-top: 60px;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    position: relative; display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 15px 4px 15px;
+    height: 76px;
+    width: 120px;
+    border-radius: 52px;
+    font-size: 35px;
+    background-color: #0A3871;
+    cursor: pointer;
+    transform: scale(1.5);
+}
+
+.label .ball{
+    position: absolute;
+    background-color:  #D8DFE8;
+    border-radius: 50%;
+    top: 4.5px;
+    left: 4.5px;
+    height: 75px;
+    width: 75px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(69px);
 }
 
 .textarea {
@@ -68,15 +114,25 @@ main {
     border-color: #0A3871;
 }
 
+.criptografar:hover {
+    font-size: 62px;
+    font-weight: 400;
+}
+
 .descriptografar {
     height: 200px;
     width: 990px;
     border-radius: 72px;
-    background-color: #D8DFE8;
+    background-color:  #D8DFE8;
     color: #0A3871;
     font-weight: 200;
     font-size: 52px;
     border-color: #0A3871;
+}
+
+.descriptografar:hover {
+    font-size: 62px;
+    font-weight: 400;
 }
 
 .retangulo {
@@ -156,8 +212,13 @@ main {
     margin-left: 460px;
 }
 
+.copiar:hover {
+    font-size: 62px;
+    font-weight: 400;
+}
+
 footer {
-    background-color: #909396;
+    background-color: #0A3858;
     position: absolute;
     text-align: center;
     padding-top: 40px;

@@ -38,3 +38,9 @@ function copiar() {
     document.execCommand('copy');
     alert("Texto Copiado!");
  }
+
+ const chk = document.getElementById('chk')
+
+ chk.addEventListener('change', () =>{
+    document.body.classList.toggle('dark')
+ })
